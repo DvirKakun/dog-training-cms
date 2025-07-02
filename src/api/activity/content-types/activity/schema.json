@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activities",
+  "info": {
+    "singularName": "activity",
+    "pluralName": "activities",
+    "displayName": "Activity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "component",
+      "component": "content.description-paragraph",
+      "repeatable": true,
+      "required": true
+    },
+    "details": {
+      "type": "component",
+      "component": "content.activity-details",
+      "repeatable": false,
+      "required": true
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": true
+    },
+    "galleryImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "הרשמה לפעילות",
+      "required": true
+    },
+    "hasRegistration": {
+      "type": "boolean",
+      "default": true
+    },
+    "timerTitle": {
+      "type": "string"
+    },
+    "activityDate": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

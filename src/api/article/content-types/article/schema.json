@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 200,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 1000,
+      "required": true
+    },
+    "readTime": {
+      "type": "integer",
+      "required": true,
+      "default": 5,
+      "min": 1,
+      "max": 120
+    },
+    "author": {
+      "type": "string",
+      "default": "אלעד",
+      "maxLength": 100,
+      "required": true
+    },
+    "page": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "training",
+        "therapy"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "articles"
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

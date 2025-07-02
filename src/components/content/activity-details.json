@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_content_activity_details",
+  "info": {
+    "displayName": "Activity Details"
+  },
+  "options": {},
+  "attributes": {
+    "ages": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "note": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
