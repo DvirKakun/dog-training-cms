@@ -510,7 +510,7 @@ export interface ApiProfileImageProfileImage
   extends Struct.CollectionTypeSchema {
   collectionName: 'profile_images';
   info: {
-    displayName: 'profileImage';
+    displayName: 'Profile Image';
     pluralName: 'profile-images';
     singularName: 'profile-image';
   };

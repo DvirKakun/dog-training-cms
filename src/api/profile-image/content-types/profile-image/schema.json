@@ -4,7 +4,7 @@
   "info": {
     "singularName": "profile-image",
     "pluralName": "profile-images",
-    "displayName": "profileImage"
+    "displayName": "Profile Image"
   },
   "options": {
     "draftAndPublish": true
